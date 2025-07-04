@@ -1,4 +1,3 @@
 # aaru
 
-A repository that holds abandoned, proof of concept, demo builds, and experimental
-projects.
+Disclaimer: **For educational and recreational purposes only.**
