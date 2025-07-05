@@ -22,8 +22,6 @@ extern "C" {
 #include <stdlib.h> // General utilities:
                     // malloc(), free(), exit(), atoi(), rand()
 
-#include "common.h"
-
 // Dynamic Array
 typedef struct DA_ DA;
 extern DA *da_create(void);

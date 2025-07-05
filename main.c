@@ -9,7 +9,6 @@
  * Version 1.0.0
  */
 
-#include "./third_party_c/internal_debug.h"
 #include "aaru.h"
 
 int main(int argc, char **argv) {
@@ -17,8 +16,6 @@ int main(int argc, char **argv) {
     (void)argv;
 
     DA *da = da_create();
-    dbg(da_first(da));
-    dbg(da_last(da));
     da_push(da, 34);
     da_push(da, 34);
     da_push(da, 34);
@@ -32,6 +29,5 @@ int main(int argc, char **argv) {
     da_dump(da);
     da_destroy(da);
 
-    forge_run();
     return EXIT_SUCCESS;
 }

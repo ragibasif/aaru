@@ -1,5 +1,5 @@
 /*
- * File: a_da.c
+ * File: aaru.c
  * Author: Ragib Asif
  * Email: ragib.asif30@myhunter.cuny.edu
  * GitHub: https://github.com/ragibasif
@@ -80,7 +80,6 @@ int da_last(DA *da) {
 }
 
 void da_dump(DA *da) {
-    puts("|====================");
     printf("da_dump\n");
     printf("da: %p\n", (void *)da);
     printf("da->pointer: %p\n", (void *)da->pointer);
@@ -89,7 +88,7 @@ void da_dump(DA *da) {
     for (size_t i = 0; i < da->size; i++) {
         printf("%d ", da->pointer[i]);
     }
-    puts("\n====================|");
+    putchar('\n');
 }
 
 void da_destroy(DA *da) {
